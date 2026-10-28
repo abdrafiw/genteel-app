@@ -1,6 +1,6 @@
 import { FontFamily } from "@/src/constants/Typography";
 import { Ionicons } from "@expo/vector-icons";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation } from "expo-router";
 import { useState } from "react";
 import { Pressable, View, Text, Image, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";

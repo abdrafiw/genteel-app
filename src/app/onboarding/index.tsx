@@ -3,15 +3,16 @@ import OnboardingSlide from "@/src/components/OnboardingSlide";
 import PaginationinIndicator from "@/src/components/PaginationIndicator";
 import { ONBOARDING_SLIDES, TSlide } from "@/src/utils/slides";
 import { StatusBar } from "expo-status-bar";
-import { useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { Animated, Dimensions, FlatList, View, ViewToken } from "react-native";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
+const VIEWABILITY_CONFIG = { viewAreaCoveragePercentThreshold: 50 };
 
 function OnboardingScreen() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const scrollX = useRef(new Animated.Value(0)).current;
+  const [scrollX] = useState(() => new Animated.Value(0));
   const slideRef = useRef<FlatList<TSlide>>(null);
 
   const scrollTo = async () => {
@@ -22,17 +23,14 @@ function OnboardingScreen() {
     }
   };
 
-  const viewableItemsChanged = useRef(
+  const viewableItemsChanged = useCallback(
     ({ viewableItems }: { viewableItems: ViewToken[] }) => {
       if (viewableItems.length > 0) {
         setCurrentIndex(viewableItems[0].index ?? 0);
       }
     },
-  ).current;
-
-  const viewConfig = useRef({
-    viewAreaCoveragePercentThreshold: 50,
-  }).current;
+    [],
+  );
 
   return (
     <View className="relative" style={{ height: screenHeight }}>
@@ -60,7 +58,7 @@ function OnboardingScreen() {
           },
         )}
         onViewableItemsChanged={viewableItemsChanged}
-        viewabilityConfig={viewConfig}
+        viewabilityConfig={VIEWABILITY_CONFIG}
       />
 
       <View className="absolute bottom-20 right-0 left-0 w-full flex-col gap-10 px-4 z-20">

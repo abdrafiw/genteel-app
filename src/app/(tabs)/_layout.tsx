@@ -3,7 +3,9 @@ import { HapticTab } from "@/src/components/haptic-tab";
 import { Catalog, Chat, HomeIcon } from "@/src/components/Icons";
 import { Tabs } from "expo-router";
 import React from "react";
-import { Image } from "react-native";
+import { ColorValue, Image } from "react-native";
+
+const asIconColor = (color: ColorValue) => color;
 
 export default function TabLayout() {
   const userImageUrl = "https://i.pravatar.cc/150?img=47";
@@ -26,7 +28,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          tabBarIcon: ({ color }) => <HomeIcon color={color} />,
+          tabBarIcon: ({ color }) => <HomeIcon color={asIconColor(color)} />,
         }}
       />
 
@@ -34,21 +36,21 @@ export default function TabLayout() {
         name="(catalog)"
         options={{
           href: "/(tabs)/(catalog)",
-          tabBarIcon: ({ color }) => <Catalog color={color} />,
+          tabBarIcon: ({ color }) => <Catalog color={asIconColor(color)} />,
         }}
       />
 
       <Tabs.Screen
         name="ai-search"
         options={{
-          tabBarIcon: ({ color }) => <Chat color={color} />,
+          tabBarIcon: ({ color }) => <Chat color={asIconColor(color)} />,
         }}
       />
 
       <Tabs.Screen
         name="cart"
         options={{
-          tabBarIcon: ({ color }) => <CartIconWithBadge color={color} />,
+          tabBarIcon: ({ color }) => <CartIconWithBadge color={asIconColor(color)} />,
         }}
       />
 

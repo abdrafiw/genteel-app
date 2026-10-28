@@ -1,10 +1,10 @@
 import { FontFamily } from "@/src/constants/Typography";
 import { PRODUCTS } from "@/src/data/products";
-import { Text, View } from "react-native";
+import { ColorValue, Text, View } from "react-native";
 import { ShoppingCart } from "./Icons";
 
 type CartIconWithBadgeProps = {
-    color?: string;
+    color?: ColorValue;
     size?: number;
 };
 
