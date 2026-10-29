@@ -1,10 +1,9 @@
+import { useState } from "react";
 import { View } from "react-native";
 
-import { useState } from "react";
-
+import Credentials from "./Credentials";
 import ExcitementReasons from "./ExcitementReasons";
 import ShowOffWhenWearing from "./ShowOffWhenWearing";
-import Credentials from "./Credentials";
 import Submitting from "./Submitting";
 
 type SignupStep =

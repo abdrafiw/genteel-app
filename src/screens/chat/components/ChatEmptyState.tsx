@@ -1,5 +1,7 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Text, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
+
 import type { ChatMode } from "./ModeTabs";
 
 const PLACEHOLDER: Record<ChatMode, string> = {

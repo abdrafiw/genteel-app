@@ -1,5 +1,3 @@
-import { FontFamily } from "@/src/constants/Typography";
-import { CATALOG } from "@/src/data/catalog";
 import { Link, router, useLocalSearchParams } from "expo-router";
 import {
   ChevronDown,
@@ -13,6 +11,9 @@ import {
 import { useState } from "react";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
+import { CATALOG } from "@/src/data/catalog";
 
 function ProductDetailsScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();

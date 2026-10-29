@@ -1,6 +1,7 @@
 import { View } from "react-native";
-import StylePreference from "./StylePreference";
+
 import SavedItems from "./SavedItems";
+import StylePreference from "./StylePreference";
 
 function Overview() {
   return (

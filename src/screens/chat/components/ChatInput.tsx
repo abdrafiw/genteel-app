@@ -1,5 +1,6 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Pressable, Text, TextInput, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 type Props = {
   value: string;

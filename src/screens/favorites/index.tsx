@@ -1,10 +1,12 @@
-import { FontFamily } from "@/src/constants/Typography";
-import { PRODUCTS } from "@/src/data/products";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { ChevronLeft } from "lucide-react-native";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
+import { PRODUCTS } from "@/src/data/products";
+
 import FavoriteProductCard from "./components/FavoriteProductCard";
 
 function FavoritesScreen() {

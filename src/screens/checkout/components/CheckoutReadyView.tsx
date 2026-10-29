@@ -1,7 +1,8 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { router } from "expo-router";
 import { ChevronRight } from "lucide-react-native";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 const PLACEHOLDER_ADDRESS = {
   name: "Daph Edwards",

@@ -1,7 +1,9 @@
-import { useCheckout } from "@/src/contexts/CheckoutContext";
 import { router } from "expo-router";
 import { View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { useCheckout } from "@/src/contexts/CheckoutContext";
+
 import CheckoutDefaultView from "./components/CheckoutDefaultView";
 import CheckoutHeader from "./components/CheckoutHeader";
 import CheckoutReadyView from "./components/CheckoutReadyView";

@@ -1,4 +1,3 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Feather, Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -6,6 +5,9 @@ import { useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
+
 import SearchBar from "./components/SearchBar";
 import Brands from "./sections/Brands";
 import Collections from "./sections/Collections";

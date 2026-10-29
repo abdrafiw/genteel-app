@@ -3,15 +3,16 @@ import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { ScrollView, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import CHAT_ICON from "@/assets/icons/chat.png";
+import IMAGE_ICON from "@/assets/icons/image.png";
+import VIDEO_ICON from "@/assets/icons/video.png";
+
 import AISearchBar from "./components/AISearchBar";
 import ChatHeader from "./components/ChatHeader";
-import ModeTabs, { type ChatMode, type TabConfig } from "./components/ModeTabs";
+import ModeTabs, { type TabConfig } from "./components/ModeTabs";
 import RecentSearches from "./components/RecentSearches";
 import type { SubsectionItem } from "./components/SearchSubsection";
-
-const CHAT_ICON = require("@/assets/icons/chat.png");
-const IMAGE_ICON = require("@/assets/icons/image.png");
-const VIDEO_ICON = require("@/assets/icons/video.png");
 
 const TAB_CONFIG: TabConfig[] = [
   { key: "chat", icon: CHAT_ICON, label: "Chat" },

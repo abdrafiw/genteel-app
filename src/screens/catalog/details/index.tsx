@@ -1,8 +1,10 @@
+import { Link, useLocalSearchParams } from "expo-router";
+import { Pressable,ScrollView, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
 import ProductWithPrice from "@/src/components/ProductWithPrice";
 import { CATALOG } from "@/src/data/catalog";
-import { Link, useLocalSearchParams } from "expo-router";
-import { View, ScrollView, Pressable } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+
 import CatalogHeader from "../components/CatalogHeader";
 import ProductsFilterBar from "./ProductsFilterBar";
 

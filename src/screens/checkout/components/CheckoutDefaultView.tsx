@@ -1,8 +1,9 @@
-import { FontFamily } from "@/src/constants/Typography";
-import { useCheckout } from "@/src/contexts/CheckoutContext";
 import { router } from "expo-router";
 import { ChevronDown, ChevronRight, Plus } from "lucide-react-native";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
+import { useCheckout } from "@/src/contexts/CheckoutContext";
 
 type Props = {
   payTotal: number;

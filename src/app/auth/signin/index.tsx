@@ -1,5 +1,6 @@
-import SigninScreen from "@/src/screens/auth/signin";
 import { StatusBar } from "expo-status-bar";
+
+import SigninScreen from "@/src/screens/auth/signin";
 
 function SigninPage() {
   return (

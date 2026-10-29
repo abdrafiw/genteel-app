@@ -1,8 +1,9 @@
-import { FontFamily } from "@/src/constants/Typography";
-import ChatInput from "@/src/screens/chat/components/ChatInput";
 import { Feather } from "@expo/vector-icons";
 import { useState } from "react";
 import { Image, Pressable, ScrollView, Text, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
+import ChatInput from "@/src/screens/chat/components/ChatInput";
 
 const AI_AVATAR = require("@/assets/images/ai-search/ai-img.png");
 const USER_AVATAR = "https://i.pravatar.cc/150?img=47";

@@ -1,6 +1,7 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Ionicons } from "@expo/vector-icons";
-import { View, Text, Image, Pressable } from "react-native";
+import { Image, Pressable,Text, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 function StylePreference() {
   const styleOptions = [

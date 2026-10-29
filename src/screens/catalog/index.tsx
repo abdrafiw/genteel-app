@@ -1,9 +1,10 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Feather, Ionicons } from "@expo/vector-icons";
-import { View, ScrollView, Text, Image, Pressable, TouchableOpacity } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { CATALOG } from "@/src/data/catalog";
 import { router } from "expo-router";
+import { Image, Pressable, ScrollView, Text, TouchableOpacity,View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
+import { CATALOG } from "@/src/data/catalog";
 
 function CatalogScreen() {
   const handlePress = (id: string) => {

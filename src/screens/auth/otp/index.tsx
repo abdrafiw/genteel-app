@@ -1,18 +1,18 @@
+import { useRouter } from "expo-router";
+import { useState } from "react";
 import {
-  Text,
-  View,
-  Image,
+  Alert,
   Dimensions,
+  Image,
   Pressable,
   StyleSheet,
-  Alert,
+  Text,
+  View,
 } from "react-native";
 import { OtpInput } from "react-native-otp-entry";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { FontFamily } from "@/src/constants/Typography";
-import { useState } from "react";
-import { useRouter } from "expo-router";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
 

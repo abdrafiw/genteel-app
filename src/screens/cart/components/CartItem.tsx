@@ -1,6 +1,8 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { X } from "lucide-react-native";
 import { Image, ImageSourcePropType, Text, TouchableOpacity, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
+
 import CountControl from "./CountControl";
 
 export type CartItemModel = {

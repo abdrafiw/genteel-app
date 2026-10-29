@@ -1,11 +1,11 @@
 import { Link } from "expo-router";
 import {
-  Text,
-  View,
-  Image,
   Dimensions,
+  Image,
   Pressable,
+  Text,
   TextInput,
+  View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 

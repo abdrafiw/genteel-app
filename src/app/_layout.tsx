@@ -1,15 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { SplashScreen, Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
+
 import "react-native-reanimated";
 import "../../global.css";
-
-import { useFonts } from "expo-font";
-import { useEffect, useState } from "react";
-import { Platform, View } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { CheckoutProvider } from "../contexts/CheckoutContext";
-import { useAuthStore } from "../utils/authStore";
 
 import {
   Lora_400Regular,
@@ -25,12 +17,19 @@ import {
   Nunito_700Bold,
   Nunito_800ExtraBold,
 } from "@expo-google-fonts/nunito";
+import { useFonts } from "expo-font";
+import { SplashScreen, Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import { useEffect, useState } from "react";
+import { Platform, View } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+
+import { CheckoutProvider } from "../contexts/CheckoutContext";
+import { useAuthStore } from "../utils/authStore";
 
 const isWeb = Platform.OS === "web";
 
-if (!isWeb) {
-  SplashScreen.preventAutoHideAsync();
-}
+if (!isWeb) SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const { hasCompletedOnboarding, isloggedin, _hasHydrated } = useAuthStore();

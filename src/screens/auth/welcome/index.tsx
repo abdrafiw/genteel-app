@@ -1,8 +1,9 @@
-import { Link, useRouter } from "expo-router";
-import { View, Text, Image, Dimensions, Pressable } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { FontFamily } from "@/src/constants/Typography";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { Link, useRouter } from "expo-router";
+import { Dimensions, Image, Pressable,Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
 

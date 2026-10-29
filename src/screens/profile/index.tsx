@@ -1,11 +1,13 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "expo-router";
 import { useState } from "react";
-import { Pressable, View, Text, Image, ScrollView } from "react-native";
+import { Image, Pressable, ScrollView,Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import SettingsTab from "./SettingsTab";
+
+import { FontFamily } from "@/src/constants/Typography";
+
 import Overview from "./overview";
+import SettingsTab from "./SettingsTab";
 
 function ProfileScreen() {
   const navigation = useNavigation();

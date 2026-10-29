@@ -1,4 +1,3 @@
-import { FontFamily } from "@/src/constants/Typography";
 import {
   Image,
   ImageSourcePropType,
@@ -6,6 +5,8 @@ import {
   Text,
   View,
 } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 export type ChatMode = "chat" | "image" | "video";
 

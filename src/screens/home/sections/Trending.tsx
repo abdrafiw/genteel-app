@@ -1,5 +1,7 @@
+import { Text,View } from "react-native";
+
 import { FontFamily } from "@/src/constants/Typography";
-import { View, Text } from "react-native";
+
 import TrendingItem from "../components/TrendingItem";
 
 function Trending() {

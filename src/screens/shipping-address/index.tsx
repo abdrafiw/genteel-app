@@ -1,5 +1,3 @@
-import { FontFamily } from "@/src/constants/Typography";
-import { useCheckout } from "@/src/contexts/CheckoutContext";
 import { router } from "expo-router";
 import { useState } from "react";
 import {
@@ -12,6 +10,10 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
+import { useCheckout } from "@/src/contexts/CheckoutContext";
+
 import ShippingAddressHeader from "./components/ShippingAddressHeader";
 
 const INPUT_STYLE = {

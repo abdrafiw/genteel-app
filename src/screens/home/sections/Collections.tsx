@@ -1,5 +1,6 @@
+import { Image,Text, View } from "react-native";
+
 import { FontFamily } from "@/src/constants/Typography";
-import { View, Text, Image } from "react-native";
 import { PRODUCTS } from "@/src/data/products";
 
 function Collections() {

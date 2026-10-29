@@ -1,10 +1,11 @@
+import { StatusBar } from "expo-status-bar";
+import { useCallback, useRef, useState } from "react";
+import { Animated, Dimensions, FlatList, View, ViewToken } from "react-native";
+
 import NextButton from "@/src/components/NextButton";
 import OnboardingSlide from "@/src/components/OnboardingSlide";
 import PaginationinIndicator from "@/src/components/PaginationIndicator";
 import { ONBOARDING_SLIDES, TSlide } from "@/src/utils/slides";
-import { StatusBar } from "expo-status-bar";
-import { useCallback, useRef, useState } from "react";
-import { Animated, Dimensions, FlatList, View, ViewToken } from "react-native";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
 const VIEWABILITY_CONFIG = { viewAreaCoveragePercentThreshold: 50 };

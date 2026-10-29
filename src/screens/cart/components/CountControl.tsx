@@ -1,6 +1,7 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Minus, Plus } from "lucide-react-native";
 import { Text, TouchableOpacity, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 type CountControlProps = {
     quantity: number;

@@ -1,4 +1,3 @@
-import { FontFamily } from "@/src/constants/Typography";
 import {
   Image,
   ImageSourcePropType,
@@ -6,6 +5,8 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 interface NotificationCardProps {
   id: number;

@@ -1,6 +1,8 @@
+import { ColorValue, Text, View } from "react-native";
+
 import { FontFamily } from "@/src/constants/Typography";
 import { PRODUCTS } from "@/src/data/products";
-import { ColorValue, Text, View } from "react-native";
+
 import { ShoppingCart } from "./Icons";
 
 type CartIconWithBadgeProps = {

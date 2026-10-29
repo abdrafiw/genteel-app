@@ -1,5 +1,6 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Image, Text, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 const AI_AVATAR = require("@/assets/images/ai-search/ai-img.png");
 

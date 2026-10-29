@@ -1,7 +1,8 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { router } from "expo-router";
 import { ChevronLeft } from "lucide-react-native";
 import { Text, TouchableOpacity, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 export default function PaymentMethodHeader() {
   return (

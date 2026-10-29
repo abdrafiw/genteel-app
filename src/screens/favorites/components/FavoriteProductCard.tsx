@@ -1,6 +1,7 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Ionicons } from "@expo/vector-icons";
 import { Image, ImageSourcePropType, Pressable, Text, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 interface FavoriteProductCardProps {
   item: {

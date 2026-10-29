@@ -1,6 +1,7 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Ionicons } from "@expo/vector-icons";
 import { Pressable, TextInput, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 type Props = {
   value?: string;

@@ -1,12 +1,13 @@
-import { FontFamily } from "@/src/constants/Typography";
+import { Ionicons } from "@expo/vector-icons";
 import {
-  View,
-  Text,
   Image,
   ImageSourcePropType,
   Pressable,
+  Text,
+  View,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 interface SavedItemProps {
   item: {

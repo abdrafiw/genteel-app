@@ -1,20 +1,20 @@
+import { Feather } from "@expo/vector-icons";
+import { useLocalSearchParams } from "expo-router";
+import { useState } from "react";
+import { type ImageSourcePropType, Pressable, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import CHAT_ICON from "@/assets/icons/chat.png";
+import IMAGE_ICON from "@/assets/icons/image.png";
+import VIDEO_ICON from "@/assets/icons/video.png";
 import { FontFamily } from "@/src/constants/Typography";
 import ChatContent from "@/src/screens/ai-search/chat";
 import AISearchHeader from "@/src/screens/ai-search/components/AISearchHeader";
 import ImageContent from "@/src/screens/ai-search/image";
 import VideoContent from "@/src/screens/ai-search/video";
 import type { ChatMode } from "@/src/screens/chat/components/ModeTabs";
-import { Feather } from "@expo/vector-icons";
-import { useLocalSearchParams } from "expo-router";
-import { useState } from "react";
-import { Pressable, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
-const CHAT_ICON = require("@/assets/icons/chat.png");
-const IMAGE_ICON = require("@/assets/icons/image.png");
-const VIDEO_ICON = require("@/assets/icons/video.png");
-
-const TABS: { key: ChatMode; label: string; icon: number }[] = [
+const TABS: { key: ChatMode; label: string; icon: ImageSourcePropType }[] = [
   { key: "chat", label: "Chat", icon: CHAT_ICON },
   { key: "image", label: "Image", icon: IMAGE_ICON },
   { key: "video", label: "Video", icon: VIDEO_ICON },

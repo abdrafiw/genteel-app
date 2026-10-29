@@ -1,4 +1,5 @@
 import { Animated, View } from "react-native";
+
 import { TSlide } from "@/src/utils/slides";
 
 type TProps = {

@@ -1,6 +1,7 @@
+import { ChevronDown, Search,SlidersHorizontal } from "lucide-react-native";
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, Modal } from "react-native";
-import { ChevronDown, SlidersHorizontal, Search } from "lucide-react-native";
+import { Modal,Text, TouchableOpacity, View } from "react-native";
+
 import { FontFamily } from "@/src/constants/Typography";
 
 const ProductsFilterBar = ({ productCount = 1500, category = "Blazers" }) => {

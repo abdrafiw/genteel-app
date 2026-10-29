@@ -1,6 +1,7 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { router } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 type Props = {
   total: number;

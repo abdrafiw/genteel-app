@@ -1,11 +1,12 @@
+import { LinearGradient } from "expo-linear-gradient";
 import {
-  View,
+  Dimensions,
   Image,
   ImageSourcePropType,
   Text,
-  Dimensions,
+  View,
 } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
+
 import { TSlide } from "@/src/utils/slides";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");

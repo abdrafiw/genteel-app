@@ -1,12 +1,11 @@
-import { View, Image, Dimensions, ActivityIndicator } from "react-native";
 import { useEffect } from "react";
-
+import { ActivityIndicator,Dimensions, Image, View } from "react-native";
 import Animated, {
+  Easing,
   useAnimatedStyle,
   useSharedValue,
   withRepeat,
   withTiming,
-  Easing,
 } from "react-native-reanimated";
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");

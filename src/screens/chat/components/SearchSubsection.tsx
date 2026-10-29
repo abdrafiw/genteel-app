@@ -1,4 +1,3 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Feather } from "@expo/vector-icons";
 import { useState } from "react";
 import {
@@ -8,6 +7,8 @@ import {
   Text,
   View,
 } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 const COLS = 4;
 const GAP = 7;

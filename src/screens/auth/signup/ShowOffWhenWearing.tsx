@@ -1,7 +1,9 @@
-import { SafeAreaView } from "react-native-safe-area-context";
-import { Pressable, Text, TouchableOpacity, View } from "react-native";
-import { FontFamily } from "@/src/constants/Typography";
 import { StatusBar } from "expo-status-bar";
+import { Pressable, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
+
 import { PersonalizationData } from ".";
 
 type Props = {

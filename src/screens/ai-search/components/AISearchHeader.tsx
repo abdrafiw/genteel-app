@@ -1,7 +1,8 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { Feather } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { Image, Pressable, Text, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 const AI_AVATAR = require("@/assets/images/ai-search/ai-img.png");
 

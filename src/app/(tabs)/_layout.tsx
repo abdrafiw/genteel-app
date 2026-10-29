@@ -1,9 +1,10 @@
-import { CartIconWithBadge } from "@/src/components/CartIconWithBadge";
-import { HapticTab } from "@/src/components/haptic-tab";
-import { Catalog, Chat, HomeIcon } from "@/src/components/Icons";
 import { Tabs } from "expo-router";
 import React from "react";
 import { ColorValue, Image } from "react-native";
+
+import { CartIconWithBadge } from "@/src/components/CartIconWithBadge";
+import { HapticTab } from "@/src/components/haptic-tab";
+import { Catalog, Chat, HomeIcon } from "@/src/components/Icons";
 
 const asIconColor = (color: ColorValue) => color;
 

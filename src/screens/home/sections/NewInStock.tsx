@@ -1,6 +1,7 @@
-import { FontFamily } from "@/src/constants/Typography";
-import { View, Text } from "react-native";
+import { Text,View } from "react-native";
+
 import ProductWithPrice from "@/src/components/ProductWithPrice";
+import { FontFamily } from "@/src/constants/Typography";
 import { PRODUCTS } from "@/src/data/products";
 
 function NewInStock() {

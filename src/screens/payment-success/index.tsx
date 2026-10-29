@@ -1,8 +1,9 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { router } from "expo-router";
 import { Check } from "lucide-react-native";
 import { Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
 
 const ORDER_NUMBER = "123467890246";
 

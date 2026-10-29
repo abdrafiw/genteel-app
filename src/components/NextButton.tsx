@@ -1,6 +1,7 @@
-import { useAuthStore } from "@/src/utils/authStore";
 import { useRouter } from "expo-router";
 import { Pressable, Text } from "react-native";
+
+import { useAuthStore } from "@/src/utils/authStore";
 
 type Props = {
   scrollTo: () => void;

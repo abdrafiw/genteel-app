@@ -1,7 +1,9 @@
-import { FontFamily } from "@/src/constants/Typography";
-import { View, Text, Pressable } from "react-native";
-import SavedItem from "../components/SavedItem";
 import { Ionicons } from "@expo/vector-icons";
+import { Pressable,Text, View } from "react-native";
+
+import { FontFamily } from "@/src/constants/Typography";
+
+import SavedItem from "../components/SavedItem";
 
 function SavedItems() {
   const savedItems = [

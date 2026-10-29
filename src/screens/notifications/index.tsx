@@ -1,8 +1,10 @@
-import { FontFamily } from "@/src/constants/Typography";
 import { router } from "expo-router";
 import { ChevronLeft, Settings } from "lucide-react-native";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { FontFamily } from "@/src/constants/Typography";
+
 import NotificationCard from "./components/NotificationCard";
 
 function NotificationsScreen() {
